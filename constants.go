@@ -7,6 +7,7 @@ import (
 
 var ENVIRONMENT = ""
 var APIKEY = ""
+var AUTHKEY = ""
 var URL = ""
 
 const (
@@ -14,9 +15,10 @@ const (
 	StagingUrl = "https://demo.connect.easyparcel.my"
 )
 
-func Init(e string, f string) {
+func Init(e string, f string, g string) {
 	ENVIRONMENT = e
   APIKEY = f
+  AUTHKEY = g
 
   if ENVIRONMENT == "production" {
     URL = ProductionUrl
@@ -29,8 +31,8 @@ func Init(e string, f string) {
 
 func objectFactory(objectType string) (interface{}) {
   switch (objectType) {
-    case "credit":
-      return models.CreditResponse{}
+    case "creditBalance":
+      return models.CreditBalanceResponse{}
   }
   return nil
 }

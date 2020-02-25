@@ -9,9 +9,9 @@ import (
   models "github.com/helmiruza/easyparcel-go/models"
 )
 
-func GetCreditBalance() (models.CreditResponse, models.Error) {
+func GetCreditBalance(data models.CreditBalance) (models.CreditBalanceResponse, models.Error) {
   URL += "/?ac=EPCheckCreditBalance"
-  requestBody, _ := json.Marshal({"api": APIKEY})
+  requestBody, _ := json.Marshal(data)
 
   client := &http.Client{}
 
@@ -21,9 +21,9 @@ func GetCreditBalance() (models.CreditResponse, models.Error) {
   resp, _ := client.Do(req)
   body, err := ioutil.ReadAll(resp.Body)
 
-  obj, err1 := response(body, err, "credit")
+  obj, err1 := response(body, err, "creditBalance")
   objString, _ := json.Marshal(obj)
-  k := models.CreditResponse{}
+  k := models.CreditBalanceResponse{}
   json.Unmarshal(objString, &k)
 
   return k, err1

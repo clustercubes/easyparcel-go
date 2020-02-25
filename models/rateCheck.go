@@ -16,7 +16,7 @@ type RateCheck struct {
 	Weight float64	`json:"weight"`
 	Width float64	`json:"width"`
 	Height float64	`json:"height"`
-	CollectionDate *CustomTime	`json:"date_coll"`
+	CollectionDate string	`json:"date_coll"`
 }
 
 type BulkRateCheckResponse struct {

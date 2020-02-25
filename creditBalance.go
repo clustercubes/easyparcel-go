@@ -1,7 +1,6 @@
 package easyparcel
 
 import (
-  "fmt"
 	"net/http"
   "io/ioutil"
   "bytes"

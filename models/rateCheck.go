@@ -47,8 +47,8 @@ type RateResponse struct {
 	RequireMinOrder int `json:"require_min_order"`
 	ServiceName string `json:"service_name"`
 	CourierName string `json:"courier_name"`
-	Result []DropoffPointResponse	`json:"dropoff_point"`
-	Result []PickupPointResponse	`json:"pickup_point"`
+	DropoffPoint []DropoffPointResponse	`json:"dropoff_point"`
+	PickupPoint []PickupPointResponse	`json:"pickup_point"`
 }
 
 type DropoffPointResponse struct {

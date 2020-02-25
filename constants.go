@@ -33,6 +33,8 @@ func objectFactory(objectType string) (interface{}) {
   switch (objectType) {
     case "creditBalance":
       return models.CreditBalanceResponse{}
+    case "rateCheck":
+      return models.BulkRateCheckResponse{}
   }
   return nil
 }

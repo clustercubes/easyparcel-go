@@ -37,6 +37,8 @@ func objectFactory(objectType string) (interface{}) {
       return models.BulkRateCheckResponse{}
     case "order":
       return models.BulkOrderResponse{}
+    case "orderPayment":
+      return models.BulkOrderPaymentResponse{}
   }
   return nil
 }

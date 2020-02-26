@@ -3,7 +3,7 @@ package models
 type BulkOrderPayment struct {
 	AuthKey string	`json:"authentication"`
 	ApiKey string	`json:"api"`
-	Data []Order `json:"bulk"`
+	Data []OrderPayment `json:"bulk"`
 }
 
 type OrderPayment struct {

@@ -30,7 +30,7 @@ type Order struct {
 	SendState string	`json:"send_state"`
 	SendCode string	`json:"send_code"`
 	SendCountry string	`json:"send_country"`
-	CollectionDate string	`json:"date_coll"`
+	CollectionDate string	`json:"collect_date"`
 	Sms	bool `json:"sms"`
 	SendEmail string	`json:"send_email"`
 }

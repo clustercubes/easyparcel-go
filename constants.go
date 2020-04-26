@@ -11,7 +11,7 @@ var AUTHKEY = ""
 var URL = ""
 
 const (
-  ProductionUrl = "https://billplz.com"
+  ProductionUrl = "https://connect.easyparcel.my"
 	StagingUrl = "https://demo.connect.easyparcel.my"
 )
 

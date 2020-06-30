@@ -3,7 +3,7 @@ package easyparcel
 import (
 	"encoding/json"
 
-	models "github.com/wernicke-technologies/easyparcel-go/models"
+	models "github.com/clustercubes/easyparcel-go/models"
 )
 
 var ENVIRONMENT = ""

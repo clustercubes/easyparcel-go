@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	models "github.com/wernicke-technologies/easyparcel-go/models"
+	models "github.com/clustercubes/easyparcel-go/models"
 )
 
 func GetCreditBalance(data models.CreditBalance) (models.CreditBalanceResponse, models.Error) {

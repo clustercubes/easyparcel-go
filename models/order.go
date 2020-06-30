@@ -33,6 +33,7 @@ type Order struct {
 	CollectionDate string  `json:"collect_date"`
 	Sms            bool    `json:"sms"`
 	SendEmail      string  `json:"send_email"`
+	RequestId      string  `json:"request_id"`
 }
 
 type BulkOrderResponse struct {
@@ -72,5 +73,5 @@ type OrderStatusResponse struct {
 	Remarks      string `json:"remarks"`
 	OrderNo      string `json:"order_no"`
 	OrderStatus  string `json:"order_status"`
-	OrderPayable bool   `json:"order_payable"`
+	OrderPayable string `json:"order_payable"`
 }
